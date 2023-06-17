@@ -1,0 +1,38 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Levixo's DH Scripts", "Ocean")
+    -- MAIN
+    local Main = Window:NewTab("Scripts")
+    local MainSection = Main:NewSection("The Scripts")
+
+
+    MainSection:NewButton("FADED", "FADED", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+    end)
+
+MainSection:NewButton("NUKER", "NUKER", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/test/main/Whitelist.txt"))()
+    end)
+
+MainSection:NewButton("swag", "swag", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+    end)
+
+MainSection:NewButton("RAYX", "RAYX", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
+    end)
+
+MainSection:NewButton("PARADOX", "PARADOX", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/zerotopflash/paradox/main/README.md'),true))()
+    end)
+
+MainSection:NewButton("CROSSTIDE", "CROSSTIDE", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Crostide/cdhc/main/gui"))()
+    end)
+
+MainSection:NewButton("DESTINY", "DESTINY", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/loader"))()
+    end)
+
+MainSection:NewButton("BLUE CIRCLE LOCK", "BLUE CIRCLE LOCK", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Ryzzchips/MOON-GOD-SCRIPTS/main/Ryzzchips%20tool"))()
+    end)
