@@ -1,38 +1,122 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Levixo's DH Scripts", "Ocean")
-    -- MAIN
-    local Main = Window:NewTab("Scripts")
-    local MainSection = Main:NewSection("The Scripts")
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "DaHoodScriptz by Levixo#5740",
+   LoadingTitle = "DaScriptz",
+   LoadingSubtitle = "by Levixo#5740",
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Example Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Key | Youtube Hub",
+      Subtitle = "Key System",
+      Note = "Key In Discord Server",
+      FileName = "YoutubeHubKey1", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"https://pastebin.com/raw/AtgzSPWK"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local MainTab = Window:CreateTab("Gui's", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("Main")
 
 
-    MainSection:NewButton("FADED", "FADED", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
-    end)
+local Button = MainTab:CreateButton({
+   Name = "Nuker",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/test/main/Whitelist.txt"))()
+   end,
+})
 
-MainSection:NewButton("NUKER", "NUKER", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/test/main/Whitelist.txt"))()
-    end)
 
-MainSection:NewButton("swag", "swag", function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
-    end)
+local Button = MainTab:CreateButton({
+   Name = "Swag",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+   end,
+})
 
-MainSection:NewButton("RAYX", "RAYX", function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
-    end)
 
-MainSection:NewButton("PARADOX", "PARADOX", function()
-        loadstring(game:HttpGet(('https://raw.githubusercontent.com/zerotopflash/paradox/main/README.md'),true))()
-    end)
+local Button = MainTab:CreateButton({
+   Name = "RayX",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
+   end,
+})
 
-MainSection:NewButton("CROSSTIDE", "CROSSTIDE", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Crostide/cdhc/main/gui"))()
-    end)
 
-MainSection:NewButton("DESTINY", "DESTINY", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/loader"))()
-    end)
+local Button = MainTab:CreateButton({
+   Name = "Faded",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+   end,
+})
 
-MainSection:NewButton("BLUE CIRCLE LOCK", "BLUE CIRCLE LOCK", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Ryzzchips/MOON-GOD-SCRIPTS/main/Ryzzchips%20tool"))()
-    end)
+
+local Button = MainTab:CreateButton({
+   Name = "Paradox",
+   Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/zerotopflash/paradox/main/README.md'),true))()
+   end,
+})
+
+
+local Button = MainTab:CreateButton({
+   Name = "Crosstide",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Crostide/cdhc/main/gui"))()
+   end,
+})
+
+
+local Button = MainTab:CreateButton({
+   Name = "Agent",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mrhackerman35297/AgentCC/main/Launch.lua"))()
+   end,
+})
+
+
+local Button = MainTab:CreateButton({
+   Name = "Destiny",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/loader"))()
+   end,
+})
+
+
+local MainTab = Window:CreateTab("Locks", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("Main")
+
+
+local Button = MainTab:CreateButton({
+   Name = "Blue Circle",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ryzzchips/MOON-GOD-SCRIPTS/main/Ryzzchips%20tool"))()
+   end,
+})
+
+
+local Button = MainTab:CreateButton({
+   Name = "White Box",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/sbeeBkuZ))()
+   end,
+})
+
+
+local Button = MainTab:CreateButton({
+   Name = "Aimlock",
+   Callback = function()
+loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
+   end,
+})
